@@ -1,0 +1,51 @@
+select*from emp
+where sal>=2000;
+
+select job from emp
+where deptno !=20;
+
+
+select *from  emp
+where hiredate>'01-jan-81';
+
+select *from  emp
+where job like'A%';
+
+select *from  emp
+where comm is null;
+
+select *from  emp
+where hiredate between '01-JAN-81' and '01-JAN-82';
+
+select *from  emp
+where ename like'%E%';
+
+select *from  emp
+where sal in('1000','2000','3000','4000', '5000);
+
+
+
+select *from  emp
+where ename like 'E%'
+and ename like 'S%';
+
+select *from  emp
+where sal<1000
+and deptno in(10,20);
+
+
+select *from  emp
+where deptno in(20,30)
+and job in('ANALYST','MANAGER','CLERK')
+or deptno = 10
+and job in ('clerk','salesman');
+
+
+select *from  emp
+where (deptno in(20,30)
+and job in('ANALYST','MANAGER','CLERK'))
+or (deptno = 10
+and job in ('CLERK','SALESAMAN');
+
+
+
